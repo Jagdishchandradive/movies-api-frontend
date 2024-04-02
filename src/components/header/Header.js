@@ -22,11 +22,11 @@ return (
                         style={{maxHeight: '100px'}}
                         navbarScroll
                     >
-                    <NavLink className ="nav-link" activeStyle={{ color: 'red' }} to="/">Home</NavLink>
-                    <NavLink className ="nav-link" activeStyle={{ color: 'red' }}to="/watchList">Watch List</NavLink>      
+                    <NavLink className ="nav-link"  to="/">Home</NavLink>
+                    <NavLink className ="nav-link"  to="/">Watch List</NavLink>      
                 </Nav>
-                <Button variant="outline-info"  className="me-2">Login</Button>
-                <Button variant="outline-info">Register</Button>
+                {/* <Button variant="outline-info"  className="me-2">Login</Button> */}
+                {/* <Button variant="outline-info">Register</Button> */}
             </Navbar.Collapse>
         </Container>
     </Navbar>

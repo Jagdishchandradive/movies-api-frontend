@@ -3,7 +3,7 @@ import api from '../../api/axiosConfig';
 import {useParams} from 'react-router-dom';
 import {Container, Row, Col} from 'react-bootstrap';
 import ReviewForm from '../reviewForm/ReviewForm';
-import '../hero/Hero.css'
+
 import React from 'react'
 
 
@@ -24,7 +24,7 @@ const Reviews = ({getMovieData,movie,reviews,setReviews}) => {
 
         try
         {
-            const response = await api.post("api/v1/reviews",{reviewBody:rev.value,imdbId:movieId});
+            const response = await api.post("http://localhost:8080/api/v1/reviews",{reviewBody:rev.value,imdbId:movieId});
 
             const updatedReviews = [...reviews, {body:rev.value}];
     
@@ -49,7 +49,9 @@ const Reviews = ({getMovieData,movie,reviews,setReviews}) => {
         </Row>
         <Row className="mt-2">
             <Col>
-                <img src={movie?.poster} alt="" style={{ height:'100%',width: '100%', position:'relative'}} />
+                
+                   <img src={movie?.poster} alt="" style={{ height:'100%',width: '100%',position:'relative'}} />
+                
             </Col>
             <Col>
                 {
