@@ -11,7 +11,7 @@ body{
 .App{
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100%;
   background-color: black;
   color:white;
   margin-top:0px;

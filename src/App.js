@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import axios from 'axios';
 import Layout from './components/Layout';
 import api from './api/axiosConfig';
 import {Routes, Route} from 'react-router-dom';
