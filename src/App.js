@@ -14,7 +14,7 @@ function App() {
   const [reviews,setReviews]=useState();
   const getMovies=async () =>{
     try{
-      const response=await api.get("https://movies-api-backend-production.up.railway.app/");
+      const response=await api.get("https://localhost:8080/");
       console.log(response.data);
       setMovies(response.data);
     }
